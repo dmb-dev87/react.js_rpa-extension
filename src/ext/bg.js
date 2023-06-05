@@ -15,7 +15,7 @@ import storage from '../common/storage'
 import { setFileInputFiles } from '../common/debugger'
 import { getDownloadMan } from '../common/download_man'
 import config from '../config'
-import { searchImage } from '../common/imagesearch/adaptor.ts'
+// import { searchImage } from '../common/imagesearch/adaptor.ts'
 import { getStorageManager, StorageStrategyType } from '../services/storage'
 import { getXFile } from '../services/xmodules/xfile'
 import { resizeViewportOfTab } from '../common/resize_window'
@@ -1336,20 +1336,20 @@ const onRequest = (cmd, args) => {
         getPatternImage(visionFileName),
         getTargetImage()
       ])
-      .then(([patternImageUrl, targetImageInfo]) => {
-        const targetImageUrl  = targetImageInfo.dataUrl
-        const offset          = targetImageInfo.offset
+      // .then(([patternImageUrl, targetImageInfo]) => {
+      //   const targetImageUrl  = targetImageInfo.dataUrl
+      //   const offset          = targetImageInfo.offset
 
-        return searchImage({
-          patternImageUrl,
-          targetImageUrl,
-          minSimilarity,
-          allowSizeVariation: true,
-          scaleDownRatio:     dpiScale * window.devicePixelRatio,
-          offsetX:            offset.x || 0,
-          offsetY:            offset.y || 0
-        })
-      })
+      //   return searchImage({
+      //     patternImageUrl,
+      //     targetImageUrl,
+      //     minSimilarity,
+      //     allowSizeVariation: true,
+      //     scaleDownRatio:     dpiScale * window.devicePixelRatio,
+      //     offsetX:            offset.x || 0,
+      //     offsetY:            offset.y || 0
+      //   })
+      // })
     }
 
     case 'PANEL_TIMEOUT_STATUS': {

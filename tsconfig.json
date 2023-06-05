@@ -75,6 +75,8 @@
     "./test-xy-v1031",
     "./webextension-imagesearch-1.0.1-extension",
     "./imagesearch-testextension",
-    "./test-desktopsearch"
+    "./test-desktopsearch",
+    "./src/common/imagesearch",
+    "./src/vision_editor",
   ]
 }

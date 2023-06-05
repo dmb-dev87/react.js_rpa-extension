@@ -4,7 +4,7 @@
   "description": "__MSG_description__",
   "short_name": "__MSG_short_name__",
   "default_locale": "en",
-  "version": "6.2.8",
+  "version": "6.2.6",
   "icons": {
     "128": "logo128.png"
   },
@@ -16,7 +16,7 @@
   "background": {
     "scripts": [
       "vendor.js",
-      "background_csv_editor_desktop_screenshot_editor_options_popup_vision_editor.js",
+      "background_csv_editor_popup.js",
       "background.js"
     ],
     "persistent": true

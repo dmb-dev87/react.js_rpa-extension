@@ -20,9 +20,9 @@ module.exports = {
   entry: {
     popup:            './src/index.js',
     csv_editor:       './src/csv_editor.js',
-    vision_editor:    './src/vision_editor/index.tsx',
-    desktop_screenshot_editor: './src/desktop_screenshot_editor/index.tsx',
-    options:          './src/options.ts',
+    // vision_editor:    './src/vision_editor/index.tsx',
+    // desktop_screenshot_editor: './src/desktop_screenshot_editor/index.tsx',
+    // options:          './src/options.ts',
     content_script:   './src/ext/content_script/index.js',
     inject:           './src/ext/inject.js',
     background:       './src/ext/bg.js'

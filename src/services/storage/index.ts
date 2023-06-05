@@ -1,4 +1,4 @@
-import * as EventEmitter from 'eventemitter3'
+import { EventEmitter } from 'eventemitter3'
 import { FlatStorage, IWithLinkStorage } from './storage'
 import { getIndexeddbFlatStorage } from './indexeddb_storage'
 import { getBrowserFileSystemFlatStorage } from './browser_filesystem_storage'

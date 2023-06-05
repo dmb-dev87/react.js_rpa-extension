@@ -1,4 +1,4 @@
-import * as EventEmitter from 'eventemitter3'
+import { EventEmitter } from 'eventemitter3'
 import { ReadFileType as RFT } from '../../common/filesystem'
 import { withFileExtension, validateStandardName } from '../../common/utils'
 import debounce = require('lodash.debounce')

@@ -49,7 +49,7 @@ export class XFile extends XModule<NativeFileAPI> {
 
       const checkDirectoryExists = () => {
         return api.directoryExists({ path: config.rootDir })
-        .then(existed => {
+        .then((existed: any) => {
           if (!existed) throw new Error(`Directory '${config.rootDir}' doesn't exists`)
           return true
         })
@@ -59,15 +59,15 @@ export class XFile extends XModule<NativeFileAPI> {
         const testDir = path.join(config.rootDir, '__kantu__' + Math.round(Math.random() * 100))
 
         return api.createDirectory({ path: testDir })
-        .then(created => {
+        .then((created: any) => {
           if (!created) throw new Error()
           return api.removeDirectory({ path: testDir })
         })
-        .then(deleted => {
+        .then((deleted: any) => {
           if (!deleted) throw new Error()
           return true
         })
-        .catch(e => {
+        .catch((e: any) => {
           throw new Error(`Directory '${config.rootDir}' is not writable`)
         })
       }
